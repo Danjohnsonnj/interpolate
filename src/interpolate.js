@@ -82,8 +82,4 @@ const interpolateY = (start = {x: 0, y: 0}, end = {x: 1, y: 1}, x = 0.5, bezierM
 }
 
 
-try {
-  module.exports = interpolateY;
-} catch (err) {
-  console.error(err);
-}
+module.exports = interpolateY;

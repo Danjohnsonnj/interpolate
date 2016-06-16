@@ -40,8 +40,4 @@ const interpolateFromRange = (referenceRange, targetRange, referenceValue) => {
   return Math.abs((referenceValue - rLower) / rDiff * tDiff + mod);
 };
 
-try {
-  module.exports = interpolateFromRange;
-} catch (err) {
-  console.error(err);
-}
+module.exports = interpolateFromRange;
