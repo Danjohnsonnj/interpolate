@@ -1,7 +1,11 @@
+const interpolateFromRange = require('./interpolateFromRange');
 const interpolate = require('./interpolate');
 
 try {
-  module.exports = interpolate;
+  module.exports = {
+    interpolateFromRange,
+    interpolate
+  };
 } catch (err) {
   console.error(err);
 }
